@@ -103,6 +103,18 @@ rules:
   verbs:
   - update
 - apiGroups:
+  - ''
+  resources:
+  - serviceaccounts/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - rbac.authorization.k8s.io
+  resources:
+  - roles/finalizers
+  verbs:
+  - update
+- apiGroups:
   - core.rekuberate.io
   resources:
   - sleepcycles/status
