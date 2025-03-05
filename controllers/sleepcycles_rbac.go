@@ -14,7 +14,7 @@ import (
 )
 
 const (
-	serviceAccountName = "sleecycles-runner"
+	serviceAccountName = "sleepcycles-runner"
 )
 
 func (r *SleepCycleReconciler) reconcileRbac(ctx context.Context, sleepcycle *corev1alpha1.SleepCycle) error {
